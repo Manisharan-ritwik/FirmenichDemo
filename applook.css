@@ -6,7 +6,7 @@
     margin-top: 50px;
     margin-bottom: 05px;
     display: block;
-    width: 60%;
+    width: 80%;
     height: 500px;
     border: 5px solid #fff;
     background-image: url(preview.jpg);
@@ -39,7 +39,7 @@ input[type=file] {
     margin: auto;
     display: block;
     float: right;
-    width: 54%;
+    width: 84%;
 	margin-top: 5px;
 	border-radius: 5px;
 }
@@ -60,7 +60,7 @@ input[type=file] {
 {
 	font-family: "arial", "Comic Sans MS", cursive, sans-serif;
 	text-align: center;
-
+	
 }
 
 body, html {
@@ -89,7 +89,7 @@ body, html {
 .result-bg {
     background: #fff;
     border-radius: 5px;
-    width: 71%;
+    width: 84%;
     margin: 6px auto 0;
     height: 45px;
     vertical-align: middle;
@@ -99,7 +99,7 @@ body, html {
 
 .result {
     float: left;
-	width: 85%;
+	width: 90%;
 }
 
 .result-bg span {
@@ -108,9 +108,6 @@ body, html {
     font-size: 25px;
     padding-top: 6px;
     padding-right: 15px;
-}
-.upload-file {
-    margin-right: -20px;
 }
 
 h3#resultdisplay {
@@ -163,7 +160,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#345888', end
     padding: 10px 45px;
     background: #a4a4a4;
     color: #fff;
-	font-size: 16px;
 }
 .nav>li>a:last-child {
     margin-left: 10px;
@@ -172,30 +168,4 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#345888', end
 .nav>li>a:focus, .nav>li>a:hover {
     text-decoration: none;
     background-color: #365a89;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 991px) {
-	input[type=file] {
-    float: none;
-    width: 68%;
-
-}
-.upload-file {
-    margin-right: 0px;
-}
-.result-bg {
-    width: 68%;
-    display: block;
-    float: none;
-}
-
-
-.logo-upload {
-   bottom: -5px;
-}
-
-.nav>li>a {
-   padding: 10px 25px;
-}
-
 }
