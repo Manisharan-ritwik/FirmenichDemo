@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+	<title>Firmenich Ritwik PoC</title>
+
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="main.css" type="text/css" media="all">
+	<script src="capture.js">	</script>
+	
+</head>
+<body>
+<div class="contentarea">
+	<div id="exTab3" class="container">
+	<div class="logo-upload">
+	<img src="logo.png">
+
+</div>
+</div>
+
+<div id="exTab3" class="container">
+
+<ul  class="nav nav-pills">
+			<li><a href="Pick/index.html" >Upload Photo</a>
+			</li>
+			<li class="active">
+        <a  href="index.html" >Capture</a>
+			</li>
+
+
+		</ul>
+
+			<div class="tab-content clearfix">
+			  <div class="tab-pane active" id="1b">
+	<div class="row camera">
+	<div class="col-md-6 col-sm-12 video-main">
+	    <video id="video">Video stream not available.</video>
+    <div class="take-pic"><button id="startbutton">Take photo</button>
+    <button disabled id="flip-btn"><i class="fas fa-camera-retro"></i> <span class="flip">Flip</span></button>
+  </div>
+	</div>
+
+  <canvas id="canvas">
+  </canvas>
+
+	<div class="col-md-6 col-sm-12 output-main">
+	 <div class="output">
+    <img id="photo" alt="The screen capture will appear in this box.">
+  </div>
+
+  <div class="result-bg"> <div class="result"><a id="resulturl" href= "#"><h3 id="resultdisplay">Result will be displayed here</h3></a></div><span><i class="fas fa-paste"></i></span></div>
+	</div>
+
+
+	</div>
+	</div>
+
+
+
+
+	<div class="tab-pane" id="2b">
+
+	</div>
+
+			</div>
+  </div>
+  </div>
+
+</body>
+
+</html>
