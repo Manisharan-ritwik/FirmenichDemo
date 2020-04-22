@@ -60,7 +60,7 @@ input[type=file] {
 {
 	font-family: "arial", "Comic Sans MS", cursive, sans-serif;
 	text-align: center;
-
+	
 }
 
 body, html {
@@ -174,28 +174,61 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#345888', end
     background-color: #365a89;
 }
 
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.logo-upload {
+    bottom: -30px !important;
+}	
+}
+
 @media only screen and (min-width: 320px) and (max-width: 991px) {
 	input[type=file] {
     float: none;
-    width: 68%;
+    width: 90%;
 
 }
 .upload-file {
     margin-right: 0px;
 }
 .result-bg {
-    width: 68%;
+    width: 90%;
     display: block;
     float: none;
 }
-
-
-.logo-upload {
-   bottom: -5px;
-}
-
 .nav>li>a {
-   padding: 10px 25px;
+    padding: 10px 25px;
+}
+.logo-upload {
+    bottom: -5px;
+}
+	#uploadedPic {
+    width: 80%;
+    height: auto;
 }
 
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+	#uploadedPic {
+    width: 90%;
+    height: auto;
+}
+input[type=file] {
+    width: 100%;
+}
+.result-bg {
+    width: 100%;
+}
+.result {
+    float: left;
+    width: 84%;
+}
+h3#resultdisplay {
+    font-size: 12px;
+}
+.result-bg span {
+    font-size: 20px;
+}
+	
 }
