@@ -82,16 +82,13 @@ button#startbutton {
 
 span.flip {
     font-size: 16px;
-    position: absolute;
-    top: 11px;
-    left: 45px;
 }
 button#flip-btn {
     display: inline-block;
     border: 0;
     background: none;
     font-size: 30px;
-	position: relative;
+
 }
 .take-pic {
     background: #1f4176;
@@ -149,7 +146,7 @@ h3
   width: 50px;
   margin-top: 15px;
 
-
+  
 }*/
 
 #flip-btn:active {
@@ -213,7 +210,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#345888', end
 
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-
+	
 	#video {
     width: 430px;
     height: 360px;
@@ -226,29 +223,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#345888', end
 .take-pic, .result-bg {
     width: 430px;
 }
-
+	
 }
+
+
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
 
 video#video {
-   width: 100%;
+    width: 100%;
+	height:auto;
 }
 .take-pic {
-   width: 100%;
+    width: 100%;
+	
 }
 .nav>li>a {
-   padding: 10px 25px;
-}
-.logo-upload {
-   bottom: -5px;
-}
-#photo, .result-bg {
-   width: 100%;
-}
-.result {
-   width: 85%;
+    padding: 10px 25px;
 }
 
+#photo {
+    width: 100%;
+	height:auto;
+	
+}
+
+.result-bg {
+    width: 100%;
+	
+}
+
+
+.result {
+    width: 85%;
+}
+.logo-upload {
+    bottom: -5px;
+}
 
 }
