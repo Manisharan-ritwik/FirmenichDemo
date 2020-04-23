@@ -176,8 +176,20 @@
       result = result.replace(/\s/g,'');
       result = result.toLowerCase();
       result = result.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '');
-      result = "http://ritwiksoftware.com/clients/firmenich_dev/"+result;
 
+      var products = ["595910trosealmondflavor", "051880ap0551tuttifruttiflavor", "882134tfs1287teaflexaromeflavor"];
+
+      for(let i=0; i<products.length; i++)
+      {
+          var pn = products[i];
+          if(pn.length == result.length)
+          {
+            result = pn;
+            break;
+          }
+      }
+
+      result = "http://ritwiksoftware.com/clients/firmenich_dev/"+result;
 
 
       document.getElementById("resultdisplay").innerHTML = result;

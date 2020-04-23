@@ -40,6 +40,17 @@ app.controller("ocrController", function($scope, $http){
 
 		      r = r.toLowerCase();
 		      r = r.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '');
+		      var products = ["595910trosealmondflavor", "051880ap0551tuttifruttiflavor", "882134tfs1287teaflexaromeflavor"];
+
+		      for(let i=0; i<products.length; i++)
+		      {
+		          var pn = products[i];
+		          if(pn.length == r.length)
+		          {
+		            r = pn;
+		            break;
+		          }
+		      }
 		      r = "http://ritwiksoftware.com/clients/firmenich_dev/"+r;
 
 		      document.getElementById("resultdisplay").innerHTML = r;
